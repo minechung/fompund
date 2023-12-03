@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ANNOUNCEMENT</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        .wrapper {
+            position: relative;
+            min-height: 100vh;
+            width: 100%;
+            background: #1B1B1B;
+            padding-bottom: 100px;
+        }
+        
+        .news_mian {
+            width: calc(100% - 60px);
+            border-radius: 10px;
+            background: #323232;
+            padding: 30px;
+        }
+        
+        .title {
+            display: flex;
+            align-items: center;
+        }
+        
+        .main_content {
+            text-align: center;
+        }
+        
+        .main_content>img {
+            width: 80%;
+            margin-bottom: 20px;
+        }
+        
+        .content {
+            font-size: 14px;
+            font-family: Microsoft YaHei;
+            font-weight: 400;
+            color: #FFFFFF;
+            margin-bottom: 120px;
+        }
+        
+        .getback {
+            font-size: 16px;
+            font-family: Microsoft YaHei;
+            font-weight: bold;
+            color: #53EDC0;
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+        }
+        
+        .getback>span {
+            color: #53EDC0;
+            margin-right: 10px;
+            font-size: 20px;
+            vertical-align: middle;
+        }
+        
+        @media all and (max-width:800px) {
+            .main_wrapper {
+                padding-top: 66px;
+                width: 80%;
+                margin: 0 auto;
+            }
+            .left_img>img {
+                width: 80px;
+                position: absolute;
+                left: 16px;
+                top: 20px;
+            }
+            .head_line {
+                margin-bottom: 16px;
+            }
+            .title {
+                margin-bottom: 8px;
+            }
+            .title>div {
+                font-size: 16px;
+                font-family: Microsoft YaHei;
+                font-weight: bold;
+                color: #FFFFFF;
+            }
+            .title>img {
+                width: 26px;
+                height: 26px;
+                margin-right: 10px;
+            }
+            .time {
+                display: flex;
+                align-items: center;
+                font-size: 14px;
+                font-family: Microsoft YaHei;
+                font-weight: 400;
+                color: #FFFFFF;
+            }
+            .time>img {
+                width: 16px;
+                height: 16px;
+                margin-right: 8px;
+            }
+        }
+        
+        @media all and (min-width:801px) {
+            .main_wrapper {
+                padding-top: 156px;
+                width: 80%;
+                margin: 0 auto;
+            }
+            .left_img>img {
+                width: 196px;
+                position: absolute;
+                left: 100px;
+                top: 25px;
+            }
+            .head_line {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-bottom: 30px;
+            }
+            .title>div {
+                font-size: 20px;
+                font-family: Microsoft YaHei;
+                font-weight: bold;
+                color: #FFFFFF;
+            }
+            .title>img {
+                width: 46px;
+                height: 46px;
+                margin-right: 10px;
+            }
+            .time {
+                display: flex;
+                align-items: center;
+                font-size: 14px;
+                font-family: Microsoft YaHei;
+                font-weight: 400;
+                color: #FFFFFF;
+            }
+            .time>img {
+                width: 22px;
+                height: 22px;
+                margin-right: 8px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="left_img">
+            <img onclick="getbackpage()" src="./img/logo.png" alt="">
+        </div>
+        <div class="main_wrapper">
+            <div class="news_mian">
+
+            </div>
+
+        </div>
+    </div>
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/1.10.0/jquery.js"></script>
+    <script>
+        var id = location.search.split('=')[1]
+        var str = ''
+        $.ajax({
+            url: '' + id,
+            type: "GET",
+            success: function(data) {
+                console.log(data)
+                str = `
+                <div class="head_line">
+                    <div class="title">
+                        <img src="./img/tubaio .png" alt="">
+                        <div class="maintitle">${data.data.title}</div>
+                    </div>
+                    <div class="time">
+                        <img src="./img/time.png" alt=""> ${data.data.created_at}
+                    </div>
+                </div>
+                <div class="main_content">
+                    <img src="${data.data.thumbnail}" alt="">
+                </div>
+                <div class="content">
+                    ${data.data.content}
+                </div>
+                <div onclick="getbackpage()" class="getback"> <span><</span> 返回上级</div>
+                
+                `
+                $('.news_mian').html(str)
+            },
+            error: function(err) {
+                console.log(err)
+            }
+        })
+
+        function getbackpage() {
+            location.href = './index.html'
+        }
+    </script>
+</body>
+
+</html>

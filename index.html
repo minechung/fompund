@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fompound</title>
+    <link rel="stylesheet" href="./css/loading.css">
+    <link rel="stylesheet" href="./animate/animate.css">
+    <link rel="stylesheet" href="./swiper/dist/css/swiper.min.css">
+    <link href="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/4.5.3/css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/page.css">
+    <link rel="stylesheet" href="./css/main.min.css">
+</head>
+
+<body>
+    <div class="preloader">
+        <div class="preloader-after"></div>
+        <div class="preloader-before"></div>
+        <div class="preloader-block">
+            <div class="title">Fompound</div>
+            <!-- <div class="percent">0</div> -->
+            <div class="loading">loading</div>
+        </div>
+        <div class="preloader-bar">
+            <div class="preloader-progress"></div>
+        </div>
+    </div>
+    <!-- 导航栏以及logo -->
+    <div class="headNav">
+        <div onclick="topage(0)" class="leftImg"><img src="./img/logo.png" alt=""></div>
+        <div class="rightNav">
+            <div>
+                <div onclick="topage(1)" class="title-nav nav-1">FOM-A</div>
+                <div class="midlineone">
+                    <div class="point-wrapper">
+                        <div class="slide-point">
+                            <div></div>
+                            <div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <div onclick="topage(2)" class="title-nav nav-2">FOMP</div>
+
+                <div class="midlineone">
+                    <div class="point-wrapper1">
+                        <div class="slide-point">
+                            <div></div>
+                            <div></div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div>
+                <div onclick="topage(3)" class="title-nav nav-3">FOMPOUND</div>
+                <div class="midlineone">
+                    <div class="point-wrapper2">
+                        <div class="slide-point">
+                            <div></div>
+                            <div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div onclick="topage(4)" class="title-nav nav-4">ANNOUNCEMENT</div>
+                <div class="midlineone">
+                    <div class="point-wrapper2">
+                        <div class="slide-point">
+                            <div></div>
+                            <div></div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div>
+                <div onclick="topage(6)" class="title-nav">ABOUT</div>
+
+
+            </div>
+            <div>
+                <div onclick="topage(5)" class="title-nav">DAPP</div>
+
+
+            </div>
+        </div>
+        <div class="min_nav_btn">
+            <img class="img_contorl" src="./img/MUNE.png" alt="">
+            <div class="min_nav_list">
+                <div onclick="topage(1)">FOM-A</div>
+                <div onclick="topage(2)">FOMP</div>
+                <div onclick="topage(3)">FOMPOUND</div>
+                <div onclick="topage(4)">ANNOUNCEMENT</div>
+                <div onclick="topage(6)">ABOUT</div>
+                <div onclick="topage(5)">DAPP</div>
+            </div>
+        </div>
+    </div>
+    <!-- 右侧Twitter以及wx -->
+    <div class="rightNavBottom">
+        <div class="wx">
+            <div class="wx_img"><img src="./img/vx.png" alt=""></div>
+            <div class="wx_qr">
+                <img src="./img/wx.png" alt="">
+            </div>
+        </div>
+        <div class="twitter">
+            <div class="twitterImg"><img src="./img/twitter.png" alt=""></div>
+            <div class="twitter_url">https://twitter.com/Fompound1</div>
+        </div>
+
+    </div>
+    <!-- Swiper -->
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+
+                <div class="page_one">
+                    <div class="page_one_title">
+                        <div class="p1_title_max">FOMPOUND</div>
+                        <div class="p1_title_min">IPFS领域去中心化金融聚合器</div>
+                        <div class="p1_img"><img src="./img/Spin.png" alt=""></div>
+                    </div>
+                    <div class="media_link">
+                        <div onclick="tomediapatner('https://etherscan.io')"><img src="./img/eth.png" alt=""> </div>
+                        <div onclick="tomediapatner('https://zb.com/cn')"><img src="./img/2.png" alt=""></div>
+                        <div onclick="tomediapatner('https://biki.com/zh_CN')"><img src="./img/3.png" alt=""></div>
+                        <div onclick="tomediapatner('https://bw.com')"><img src="./img/4.png" alt=""></div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide slide-2-bg">
+                <canvas class="snow-canvas" speed="1" interaction="false" size="2" count="160" opacity="0.00001" start-color="rgba(253,252,251,1)" end-color="rgba(251,252,253,0.3)" wind-power="0" image="false" width="1366" height="667"></canvas>
+                <div class="p2">
+                    <div class="p2_title">IPFS5910T算力的强标的</div>
+                    <div class="p2_main">
+                        <div class="p2_main_left_img"><img src="./img/tu.png" alt=""></div>
+                        <div class="p2_main_right_content">
+                            <div class="all_num">Fom-A总量8353693枚</div>
+                            <div class="bottom_list">
+                                <div class="time_advance"><img src="./img/time.png" alt=""><span>时间优势</span></div>
+                                <div class="time_advance"><img src="./img/moremoney.png" alt=""><span>成本优势</span></div>
+                                <div class="time_advance"><img src="./img/shou.png" alt=""><span>收益倍增</span></div>
+                            </div>
+                            <div class="p2_bottom_des">
+                                <div class="p2_bottom_list">
+                                    <div class="p2_bottom_list_div"> <span class="p2_point"></span> <span>全网算力:</span><span class="allTotalPower"></span></div>
+                                    <div class="p2_bottom_list_div"> <span class="p2_point"></span> <span>待空投数量:</span><span class="pendingAirdrop"></span></div>
+                                </div>
+                                <div class="p2_bottom_list">
+                                    <div class="p2_bottom_list_div"> <span class="p2_point"></span> <span>FIL产出数量:</span><span class="filOutput"></span></div>
+                                    <div class="p2_bottom_list_div"> <span class="p2_point"></span> <span>FIL待释放数量:</span><span class="filPendingRelease"></span></div>
+                                </div>
+                                <div class="p2_bottom_list">
+                                    <div class="p2_bottom_list_div"> <span class="p2_point"></span> <span>FIL释放数量:</span><span class="filRelease"></span></div>
+                                    <div class="p2_bottom_list_div"> <span class="p2_point"></span> <span>FOMP流通数量:</span><span class="fompFlow"></span></div>
+                                </div>
+                                <div class="p2_bottom_list">
+                                    <div class="p2_bottom_list_div"> <span class="p2_point"></span> <span>交易所空投时间:</span><span class="airdropTime"></span></div>
+                                    <div class="p2_bottom_list_div"> <span class="p2_point"></span> <span>交易所 / 链上快照时间:</span><span class="snapshotTime"></span></div>
+                                </div>
+                                <div class="p2_bottom_list">
+                                    <div class="p2_bottom_list_div"> <span class="p2_point"></span> <span>链上空投时间:</span><span class="chainairdropTime"></span></div>
+                                    <div class="p2_bottom_list_div"> </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide slide-2-bg">
+                <canvas class="snow-canvas" speed="1" interaction="false" size="2" count="160" opacity="0.00001" start-color="rgba(253,252,251,1)" end-color="rgba(251,252,253,0.3)" wind-power="0" image="false" width="1366" height="667"></canvas>
+                <div class="p3">
+                    <div class="p3_title">FOMP总量100万枚</div>
+                    <div class="p3_second_title">全部由流动性挖矿产生分配给社区</div>
+                    <div class="p3_main_table">
+                        <div class="platform"><img src="./img/FOM-A.png" alt="">
+                            <div>平台治理权</div>
+                        </div>
+                        <div class="earnings"><img src="./img/FEN.png" alt="">
+                            <div>收益分配权</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide  slide-2-bg">
+                <canvas class="snow-canvas" speed="1" interaction="false" size="2" count="160" opacity="0.00001" start-color="rgba(253,252,251,1)" end-color="rgba(251,252,253,0.3)" wind-power="0" image="false" width="1366" height="667"></canvas>
+                <div class="p4">
+                    <div class="p4_head_img_wrapper">
+
+                        <div class="p4_img4"><img src="./img/FOMP.png" alt="">
+                            <div class="p4_img1"><img src="./img/IPFS.png" alt=""></div>
+                            <div class="p4_img2"><img src="./img/DEFI.png" alt=""></div>
+                            <div class="p4_img3"><img src="./img/YFI.png" alt=""></div>
+                        </div>
+                    </div>
+                    <div class="p4_main_aricle">FOMPOUND是致力于用区块链技术打造在IPFS领域的去中心化金融聚合器，对IPFS领域包括但不限于算力提供等方式进行投资。FOMPOUND通过发行FOM-A至 FOM-J等不同的资产包所有权通证，进行分期分批的投资，从而提高收益率降低风险值。FOMPOUND将使用DEFI质押加流动性挖矿的方式产生平台权益及治理代币FOMP，通过FOM-A至-J分期分批的投资，对FOMP产生聚合效益，从而提升FOMPOUND的项目价值，奠定行业领导者地位。
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide  slide-2-bg">
+                <canvas class="snow-canvas" speed="1" interaction="false" size="2" count="160" opacity="0.00001" start-color="rgba(253,252,251,1)" end-color="rgba(251,252,253,0.3)" wind-power="0" image="false" width="1366" height="667"></canvas>
+                <div class="news_wrapper">
+                    <div class="news-list">
+
+
+
+                        <!-- <div class="news-table">
+                            <div class="head_img"><img src="./img/testnews.png" alt=""></div>
+                            <div class="news_content">
+                                <div class="head_title"><img src="./img/tubaio .png" alt="">此处是标题</div>
+                                <div class="main_content">此处是内容此处是内容此处是内容此处是内容此处是内容此处是内容此处是内容此处是内容此处是内容此处是内容此处是内容此处是内容此处是内容此处是内容</div>
+                                <div class="time_line"><img src="./img/time-blank.png" alt="">2021-01-18</div>
+                            </div>
+                        </div> -->
+                        <!-- <div class="news-table">
+                            <div class="head_img"><img src="./img/testnews.png" alt=""></div>
+                            <div class="news_content">
+                                <div class="head_title"><img src="./img/tubaio .png" alt="">此处是标题</div>
+                                <div class="main_content">此处是内容此处是内容此处是内容此处是内容此处是内容此处是内容此处是内容此处是内容此处是内容此处是内容此处是内容此处是内容此处是内容此处是内容</div>
+                                <div class="time_line"><img src="./img/time-blank.png" alt="">2021-01-18</div>
+                            </div>
+                        </div> -->
+
+
+
+
+
+                    </div>
+                    <div class="news_change">
+                        <div class="M-box m-style"></div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        <!-- Add Arrows -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+
+    </div>
+
+
+
+    <!-- Button trigger modal -->
+
+
+    <!-- Modal -->
+    <div class="modelwrapper"></div>
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/1.10.0/jquery.js"></script>
+    <script src="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/4.5.3/js/bootstrap.js"></script>
+    <script src="./swiper/dist/js/swiper.min.js"></script>
+    <script src="./js/snow-plugin.js"></script>
+    <script src="./js/pagination.js"></script>
+    <script>
+        // 控制小菜单开关
+        var flag = false
+        $('.img_contorl').click(() => {
+                if (!flag) {
+                    $('.min_nav_list').show()
+                    flag = !flag
+                } else {
+                    $('.min_nav_list').hide()
+                    flag = !flag
+                }
+            })
+            //加载动画
+
+        document.onreadystatechange = completeLoading;
+
+        function completeLoading() {
+
+            if (document.readyState == "complete") {
+                $('.title').addClass('animated fadeOutUp')
+                $('.preloader-after').addClass('animated fadeOutUp')
+                $('.loading').addClass(' animated fadeOutDown')
+                $('.preloader-before').addClass('animated fadeOutUp')
+                $('.preloader-bar').addClass('animated  fadeOutRight')
+                    // $('.loading').addClass('animated  fadeOutRight')
+                $('.preloader').remove()
+                    // setTimeout
+
+
+            }
+        }
+        // swiper
+        var swiper = new Swiper('.swiper-container', {
+            pagination: {
+                el: '.swiper-pagination',
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            watchSlidesProgress: true,
+            on: {
+                progress: function(progress) {
+                    if (progress == 0.3333333333333333) {
+                        $('.p2_title').addClass("animated fadeInLeft")
+                        $('.p2_main_left_img').addClass("animated fadeInLeft")
+                        $('.p2_main_right_content').addClass("animated fadeInLeft")
+
+                        setTimeout(() => {
+                            $('.p2_title').removeClass("animated fadeInLeft")
+                            $('.p2_main_left_img').removeClass("animated fadeInLeft")
+                            $('.p2_main_right_content').removeClass("animated fadeInLeft")
+
+                        }, 5000)
+                    }
+                    if (progress == 0.6666666666666666) {
+                        $('.p3_title').addClass("animated fadeInLeft")
+                        $('.p3_second_title').addClass("animated fadeInLeft")
+                        $('.platform').addClass("animated fadeInLeft")
+                        $('.earnings').addClass("animated fadeInLeft")
+                        setTimeout(() => {
+                            $('.p3_title').removeClass("animated fadeInLeft")
+                            $('.p3_second_title').removeClass("animated fadeInLeft")
+                            $('.platform').removeClass("animated fadeInLeft")
+                            $('.earnings').removeClass("animated fadeInLeft")
+                        }, 3000)
+                    }
+                    if (progress == 1) {
+                        $(' .p4_img1').addClass("p4_img1_move")
+                        $(' .p4_img2').addClass("p4_img2_move")
+                        $(' .p4_img3').addClass("p4_img3_move")
+                        setTimeout(() => {
+                            $(' .p4_img1').removeClass("p4_img1_move")
+                            $(' .p4_img2').removeClass("p4_img2_move")
+                            $(' .p4_img3').removeClass("p4_img3_move")
+                        }, 3000);
+                    }
+                },
+            }
+        });
+        // 雪花特效
+        $(function() {
+            $(".snow-canvas").snow();
+        });
+        // 页面跳转
+        function topage(p) {
+            if (p == 0) {
+                swiper.slideTo(0, 2000, false)
+                flag = false
+                $('.min_nav_list').hide()
+            } else if (p == 1) {
+                swiper.slideTo(1, 2000, false)
+                flag = false
+                $('.min_nav_list').hide()
+
+            } else if (p == 2) {
+                swiper.slideTo(2, 2000, false)
+                flag = false
+                $('.min_nav_list').hide()
+
+            } else if (p == 3) {
+                swiper.slideTo(3, 2000, false)
+                flag = false
+                $('.min_nav_list').hide()
+
+            } else if (p == 4) {
+                swiper.slideTo(4, 2000, false)
+                flag = false
+                $('.min_nav_list').hide()
+            } else if (p == 5) {
+                window.open('https://app.fompound.com')
+            } else {
+                window.open('./Fompound.pdf')
+            }
+        }
+
+
+        //跳转合作媒体
+        function tomediapatner(l) {
+            window.open(l)
+        }
+        //     // 获取新闻
+        var str = ''
+
+
+        // <div class="news-table">
+        //                 <div class="head_img"><img src="./img/testnews.png" alt=""></div>
+        //                 <div class="news_content">
+        //                     <div class="head_title"><img src="./img/tubaio .png" alt="">此处是标题</div>
+        //                     <div class="main_content">此处是内容此处是内容此处是内容此处是内容此处是内容此处是内容此处是内容此处是内容此处是内容此处是内容此处是内容此处是内容此处是内容此处是内容</div>
+        //                     <div class="time_line"><img src="./img/time-blank.png" alt="">2021-01-18</div>
+        //                 </div>
+        //             </div>
+
+        $.ajax({
+            url: 'https://website-backend.fompound.com/api/website/notices?pageSize=3&pageNum=1',
+            type: 'GET',
+            success: function(data) {
+
+                //分页
+
+                $('.M-box').pagination({
+                    totalData: data.data.total,
+                    showData: 3,
+                    mode: 'fixed',
+                    callback: function(api) {
+                        str = ''
+                        $.ajax({
+                            url: 'https://website-backend.fompound.com/api/website/notices?pageSize=3&pageNum=' + api.getCurrent(),
+                            type: 'GET',
+                            success: function(data) {
+
+                                //分页
+                                for (let v of data.data.records) {
+
+                                    str += `
+                    <div onclick="todetais('${v.id}')"  class="news-table">
+                        <div class="head_img"><img src="${v.thumbnail}" alt=""></div>
+                        <div class="news_content">
+                            <div class="head_title"><img src="./img/tubaio .png" alt=""><div>${v.title}</div></div>
+                           <div class="main_content">${v.content}</div>
+                          <div class="time_line"><img src="./img/time-blank.png" alt="">${v.created_at}</div>
+                         </div>
+
+                        </div>
+                        `
+
+
+                                }
+                                $('.news-list').html(str)
+
+                            },
+                            error: function(err) {
+                                console.log(err)
+                            }
+
+                        })
+                    }
+                })
+                for (let v of data.data.records) {
+
+                    str += `
+                    <div onclick="todetais('${v.id}')"  class="news-table">
+                        <div class="head_img"><img src="${v.thumbnail}" alt=""></div>
+                        <div class="news_content">
+                            <div class="head_title"><img src="./img/tubaio .png" alt=""><div>${v.title}</div></div>
+                           <div class="main_content">${v.content}</div>
+                          <div class="time_line"><img src="./img/time-blank.png" alt="">${v.created_at}</div>
+                         </div>
+
+                        </div>
+                        `
+
+
+                }
+                $('.news-list').html(str)
+
+            },
+            error: function(err) {
+                console.log(err)
+            }
+
+        })
+
+
+
+
+        function todetais(id) {
+            console.log(id)
+            location.href = `./ANNOUNCEMENT.html?id=${id}`
+        }
+
+        // 获取数据
+        $.ajax({
+            url: 'https://website-backend.fompound.com/api/website/data',
+            type: 'GET',
+            success: function(data) {
+
+                $('.allTotalPower').html(`${data.data.allTotalPower}T`)
+                $('.pendingAirdrop').html(`${data.data.pendingAirdrop}枚`)
+                $('.filOutput').html(`${data.data.filOutput}枚`)
+                $('.filRelease').html(`${data.data.filRelease}枚`)
+                $('.filPendingRelease').html(`${data.data.filPendingRelease}枚`)
+                if (data.data.airdropTime == null) {
+                    $('.airdropTime').html(``)
+                } else {
+                    var timer = data.data.airdropTime.split(' ')
+                    var year = timer[0].split('-')
+
+
+                    $('.airdropTime').html(`${year[0]}.${year[1]}.${year[2]}-${timer[1]}`)
+
+                }
+                if (data.data.chainAirdropTime == null) {
+                    $('.chainairdropTime').html(``)
+                } else {
+                    var timer = data.data.chainAirdropTime.split(' ')
+                    var year = timer[0].split('-')
+
+
+                    $('.chainairdropTime').html(`${year[0]}.${year[1]}.${year[2]}-${timer[1]} 前`)
+
+                }
+                if (data.data.snapshotTime == null) {
+                    $('.snapshotTime').html(``)
+                } else {
+                    var timer = data.data.snapshotTime.split(' ')
+                    var year = timer[0].split('-')
+
+
+                    $('.snapshotTime').html(`${year[0]}.${year[1]}.${year[2]}-${timer[1]}`)
+
+                }
+                if (data.data.chainSnapshotTime == null) {
+                    $('.chainsnapshotTime').html(``)
+                } else {
+                    var timer = data.data.chainSnapshotTime.split(' ')
+                    var year = timer[0].split('-')
+
+
+                    $('.chainsnapshotTime').html(`${year[0]}.${year[1]}.${year[2]}-${timer[1]}`)
+
+                }
+                $('.fompFlow').html(`${data.data.fompFlow}枚`)
+
+            },
+            error: function(err) {
+                console.log(err)
+            }
+        })
+    </script>
+</body>
+
+
+</html>
